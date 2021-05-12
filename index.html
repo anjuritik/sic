@@ -1,16 +1,73 @@
-<html>
-    <head>
-    <script src="script.js"></script>
-    <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <h1>Simple Interest Calculator</h1>
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
-        Amount <input type="number"  id="principal">  <br/>
-        Rate <input type="number"  id="rate">  <br/>
-        No. of Years <input type="number"  id="years">  <br/>
-        Interest : <span id="result"></span><br>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Simple Interest calculation</title>
+    <link href="an_test.css" rel="stylesheet" type="text/css" />
+    <script src="an_test_1.js" type="text/javascript"></script>
 
-        <button onclick="compute()">Compute</button>
-    </body>
+    <script src="js/jquery.min.js" type="text/javascript"></script>
+</head>
+<body>
+
+
+
+ 
+ <div class="container-login100">
+
+ <div class="wrap-login100">
+ <div class="subitm1" id="main">
+   
+ 
+  
+  <div id="center"> 
+    <h1 class="h_col"> Simple Interest Calculator</h1>
+  </div>
+ 
+<div id="center">
+  <label class="p_amt" id="p_amt_id">Principle Amount :</label>
+  <input class="input1" type="number" id="Princ1"/>
+ </div>
+  <br />
+ <div id="center">
+  <label class="p_amt" id="Label1">Interest Percentage :</label>
+  <input class="input1" type="number" id="int_per"/>
+  </div>
+  <br />
+
+ <div id="center"> 
+  <label class="p_amt" id="Label2">No of Years :</label>
+  <select id="No_of_Years" class="input1">
+  <option id="Option1" value="1">1 Year</option>
+  <option id="Option2" value="2" >2 Year</option>
+ <option id="Option3" value="3">3 Year</option>
+  </select>
+ </div>
+  <br /> 
+
+  
+<div id="center"> 
+
+   <input type="button" class="btn1" onClick="sayHello()" value="Calculate Interest" />
+ </div>  
+  
+  <div id="center">
+  <label id="res1" class="p_res">
+  </label>
+  </div>
+ 
+<div>
+  @Everyone Can Get Rich
+</div>
+
+  
+</div>
+ 
+ 
+</div>
+
+</div>
+
+
+</body>
 </html>
