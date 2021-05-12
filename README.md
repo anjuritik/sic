@@ -1,1 +1,1 @@
-# sic
+# coding-project-template

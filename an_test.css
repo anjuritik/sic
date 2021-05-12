@@ -1,0 +1,159 @@
+﻿/*//////////////////////////////////////////////////////////////////
+[ login ]*/
+
+.limiter {
+  width: 100%;
+  height:90%;
+  margin: 0 auto;
+}
+
+.container-login100 {
+  width: 90%;  
+    min-height: 90vh;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;  
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+ align-items:center;
+ justify-content: center;
+ /*justify-content: center;
+  align-items: center;*/
+  padding: 15px;
+  background:black;
+}
+
+
+.wrap-login100 {
+  width: 90%;
+  min-height: 80vh;
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  border-radius: 20px;
+    height:90%;
+     align-items:center;
+     justify-content: center;
+ vertical-align:middle;
+ 
+}
+.subitm1
+{
+ 
+  align-items:center;
+  justify-content: center;
+
+}
+
+
+
+
+/*==================================================================
+[ Title form ]*/
+.login100-form-title {
+  width: 100%;
+  position: relative;
+  z-index: 1;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  text-align:left;
+  margin:auto;
+
+  padding: 70px 15px 74px 15px;
+}
+#main h1 {
+  text-align: center;
+}
+#center {
+  text-align: center;
+}
+.login100-form-title-1 {
+  font-family: Poppins-Bold;
+  font-size: 30px;
+  color: #fff;
+  text-transform: uppercase;
+  line-height: 1.2;
+  text-align: center;
+}
+
+.login100-form-title::before {
+  content: "";
+  display: block;
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(54,84,99,0.7);
+}
+
+
+/*==================================================================
+[ Form ]*/
+
+.login100-form {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 43px 88px 93px 190px;
+}
+.h_col
+{
+  
+    color:#798b79;
+   font-family: calibri;
+ font-size:50px;
+   
+    }
+.p_amt
+{
+      font-family:Calibri;
+    font-size:25px;
+    color:black;
+}
+.p_amt
+{
+      font-family:Calibri;
+    font-size:25px;
+    color:black;
+    height: 120px;
+ word-wrap: inherit;
+}
+.s_Head_c
+{
+    margin-top:0px;
+    margin-bottom:0px;
+    
+    }
+    .input1
+    {font-size:25px;
+         }
+  /* added on 12-05-2021*/
+  h2 {
+		
+		color:#FF9900;
+	}
+/* Button*/
+.btn1 {
+/* padding:20px;
+ font-weight:bold;
+ color:White;*/
+}
