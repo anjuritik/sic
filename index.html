@@ -6,7 +6,6 @@
     <link href="an_test.css" rel="stylesheet" type="text/css" />
     <script src="an_test_1.js" type="text/javascript"></script>
 
-    <script src="js/jquery.min.js" type="text/javascript"></script>
 </head>
 <body>
 
@@ -29,12 +28,15 @@
   <input class="input1" type="number" id="Princ1"/>
  </div>
   <br />
- <div id="center">
-  <label class="p_amt" id="Label1">Interest Percentage :</label>
-  <input class="input1" type="number" id="int_per"/>
+ <div id="center" style="align-items: center;">
+ 
+  <label class="p_amt" id="p_amt_id" >Interest :</label>
+  <input  type="range" min="0" max="100" id="slider" name="sld3" value="0" onchange=""show_value(this.value);">
+  <div id="selector">  <label class="p_amt" id="slider_value" ></label> 
+   </div>
+ 
   </div>
   <br />
-
  <div id="center"> 
   <label class="p_amt" id="Label2">No of Years :</label>
   <select id="No_of_Years" class="input1">
@@ -48,7 +50,7 @@
   
 <div id="center"> 
 
-   <input type="button" class="btn1" onClick="sayHello()" value="Calculate Interest" />
+   <input type="button" class="btn1" onClick="sayHello1()" value="Calculate Interest" />
  </div>  
   
   <div id="center">
@@ -67,7 +69,46 @@
 </div>
 
 </div>
+<script>
+  var i;
+  var slider=document.getElementById("slider");
+var selector=document.getElementById("selector");
+ slider.oninput= function()
+ {
+selector.style.left=this.value;
+var m=this.value;
+var i=this.value;
+document.getElementById("slider_value").innerHTML=`<h3> ${m} </h3> `;
 
+ }
+
+
+ function sayHello1() {
+var p;
+var n;
+var inta;
+var x;
+
+p=document.getElementById('Princ1').value;
+r=document.getElementById('No_of_Years').value;
+x=document.getElementById("slider_value").textContent;
+
+/*alert(x);*/
+inta=(p*x*r/100);
+n=parseFloat(p)+ parseFloat(inta);
+
+
+var oneYr = new Date().getFullYear();
+/*alert(oneYr);*/
+
+const showScore=document.querySelector('#res1');
+
+showScore.innerHTML=`<h3> If you deposit <span style="background-color: yellow;"> ${p}</span>,</br> at an interest rate of <span style="background-color: yellow;">${x} %</span>, </br> you will receive 
+an amount of  <span style="background-color: yellow;">${n} </span> </h3> 
+`;
+}
+ 
+</script>
 
 </body>
 </html>
